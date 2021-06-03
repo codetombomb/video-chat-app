@@ -1,4 +1,4 @@
-import { $ } from "@rails/ujs";
+// import { $, fileInputSelector } from "@rails/ujs";
 
 document.addEventListener("DOMContentLoaded", (event) => {
     const readURL = function(input) {
@@ -20,4 +20,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     $('.upload-button').on('click', function(){
         $('.file-upload').click();
     });
+    // Initialize tooltip from bootstrap 
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 })
