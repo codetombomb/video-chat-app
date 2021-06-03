@@ -1,3 +1,32 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+@import "./variables.scss";
+
+body {
+    font-family: "Muli", sans-serif;
+    position: relative;
+}
+
+// ======== Navbar =========
+
+.navbar {
+    background-color: #141b5d !important;
+
+    .navbar-brand {
+        color: white !important;
+        font-size: 26px;
+        font-weight: 700;
+    }
+}
+
+.navbar-toggler {
+    border-color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    &.signup-btn {
+        background-color: $greenColor;
+        border-color: $greenColor;
+    }
+}
